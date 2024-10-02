@@ -5,18 +5,54 @@ import logo from "@/images/Logo.png";
 import arrow_down from "@/images/arrow-down.png";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
+import github from "@/images/github.png";
+import linkedin from "@/images/linkedin.png";
+import email from "@/images/email.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-
   return (
     <>
-      <div className="flex">
-        <div className="px-12 lg:px-0 lg:pl-8 ">
-          <p className="border-r-[2px] border-[#ABB2BF] h-[380px] rounded-full	"></p>
+      <div className="flex relative">
+        <div className="absolute">
+          <div className="px-12 lg:px-0 lg:pl-8 ">
+            <p className="border-r-[2px] border-[#ABB2BF] h-[300px] rounded-full	"></p>
+          </div>
+          <div className="px-[37px] lg:px-0 lg:pl-7 mt-5">
+            <ul className="flex flex-col gap-5">
+              <li>
+                <Image
+                  src={github}
+                  alt="github-icon"
+                  height={25}
+                  width={23}
+                  className="cursor-pointer"
+                />
+              </li>
+              <li>
+                <Image
+                  src={linkedin}
+                  alt="github-icon"
+                  height={25}
+                  width={23}
+                  className="cursor-pointer"
+                />
+              </li>
+              <li>
+                <Image
+                  src={email}
+                  alt="github-icon"
+                  height={25}
+                  width={23}
+                  className="cursor-pointer"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex items-center justify-between px-40  h-24 w-full xl:px-12">
+
+        <div className="flex items-center justify-between px-56  h-24 w-full xl:px-12">
           <div className="flex items-center gap-3">
             <Image src={logo} height={50} width={40} alt="logo" quality={100} />
             <h1 className="font-medium text-2xl text-white">Subhan</h1>
