@@ -11,13 +11,18 @@ import email from "@/images/email.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
+
+  const handleSetActive = (link) => {
+    setActiveLink(link);
+  };
 
   return (
     <>
       <div className="flex relative">
         <div className="absolute">
           <div className="px-12 lg:px-0 lg:pl-8 ">
-            <p className="border-r-[2px] border-[#ABB2BF] h-[300px] rounded-full	"></p>
+            <p className="border-r-[2px] border-[#ABB2BF] h-[300px] rounded-full"></p>
           </div>
           <div className="px-[37px] lg:px-0 lg:pl-7 mt-5">
             <ul className="flex flex-col gap-5">
@@ -33,7 +38,7 @@ const Navbar = () => {
               <li>
                 <Image
                   src={linkedin}
-                  alt="github-icon"
+                  alt="linkedin-icon"
                   height={25}
                   width={23}
                   className="cursor-pointer"
@@ -42,7 +47,7 @@ const Navbar = () => {
               <li>
                 <Image
                   src={email}
-                  alt="github-icon"
+                  alt="email-icon"
                   height={25}
                   width={23}
                   className="cursor-pointer"
@@ -64,18 +69,20 @@ const Navbar = () => {
 
           <div className="flex items-center justify-between md:hidden">
             <ul className="flex items-center gap-8 lg:gap-6">
-              <li className="text-white text-xl font-medium flex gap-1">
-                <span className="text-[#C778DD]">#</span>home
-              </li>
-              <li className="text-white text-xl font-medium flex gap-1">
-                <span className="text-[#C778DD]">#</span>works
-              </li>
-              <li className="text-white text-xl font-medium flex gap-1">
-                <span className="text-[#C778DD]">#</span>about-me
-              </li>
-              <li className="text-white text-xl font-medium flex gap-1">
-                <span className="text-[#C778DD]">#</span>contacts
-              </li>
+              {["home", "works", "about-me", "contacts"].map((link) => (
+                <li
+                  key={link}
+                  className={`text-xl font-medium flex gap-1 cursor-pointer ${
+                    activeLink === link
+                      ? "text-white"
+                      : "text-[#ABB2BF] opacity-80"
+                  }`}
+                  onClick={() => handleSetActive(link)}
+                >
+                  <span className="text-[#C778DD]">#</span>
+                  {link}
+                </li>
+              ))}
               <li>
                 <div className="flex items-center gap-1 ml-4 lg:ml-0">
                   <p className="text-xl font-medium text-[#ABB2BF]">EN</p>
