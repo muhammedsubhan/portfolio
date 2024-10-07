@@ -60,7 +60,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-56  h-24 w-full xl:px-12">
           <div className="flex items-center gap-3">
             <Image src={logo} height={50} width={40} alt="logo" quality={100} />
-            <h1 className="font-medium text-2xl text-white">Subhan</h1>
+            <h1 className="font-medium text-2xl text-white tracking-widest">
+              Subhan
+            </h1>
           </div>
 
           <div className="hidden md:flex">
@@ -72,7 +74,7 @@ const Navbar = () => {
               {["home", "works", "about-me", "contacts"].map((link) => (
                 <li
                   key={link}
-                  className={`text-xl font-medium flex gap-1 cursor-pointer ${
+                  className={`text-xl font-medium flex gap-1 cursor-pointer  tracking-widest ${
                     activeLink === link
                       ? "text-white"
                       : "text-[#ABB2BF] opacity-80"
