@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Hero from "@/app/components/hero/Hero";
 import Projects from "./components/projects/Projects";
 import { motion } from "framer-motion";
+import Quote from "./components/quote/Quote";
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -52,6 +53,14 @@ const Home = () => {
         transition={{ duration: 0.75 }} // Increased duration
       >
         <Hero />
+      </motion.div>
+      <motion.div
+        ref={projectsRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isProjectsVisible ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.75, delay: 0.2 }} // Increased duration and added delay
+      >
+        <Quote />
       </motion.div>
       <motion.div
         ref={projectsRef}

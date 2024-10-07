@@ -1,23 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import quote from "@/images/quote.png";
 import arrow_r from "@/images/arrow_r.png";
 import ProjectCard from "./projectCard/ProjectCard";
 
 const Projects = () => {
   return (
     <>
-      <div className=" mt-40 py-10 px-56">
-        <div className="flex justify-center">
-          <Image
-            src={quote}
-            alt="quote-image"
-            height={300}
-            width={800}
-            className="pointer-events-none"
-          />
-        </div>
-
+      <div className=" mt-8 py-5 px-56">
         <div className="flex items-center mt-28">
           <h1 className="text-white text-3xl font-medium flex gap-1  tracking-widest">
             <span className="text-[#C778DD]">#</span>projects
@@ -32,7 +21,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="flex items-center gap-5 justify-between"> 
+        <div className="flex items-center gap-5 justify-between">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
