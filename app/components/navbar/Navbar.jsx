@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex relative">
+      <div className="flex sticky top-0 z-50 bg-[#282c33]">
         <div className="absolute">
           <div className="px-12 lg:px-0 lg:pl-8 ">
             <p className="border-r-[2px] border-[#ABB2BF] h-[300px] rounded-full"></p>
