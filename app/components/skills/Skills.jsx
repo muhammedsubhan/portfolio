@@ -21,6 +21,7 @@ const Skills = () => {
               alt="skills-image"
               width={550}
               height={550}
+              className="pointer-events-none"
             />
           </div>
           <div className="flex  gap-5 ">
@@ -63,7 +64,7 @@ const Skills = () => {
                 </h1>
                 <div>
                   <p className="text-[#ABB2BF] text-lg font-medium tracking-widest p-2 leading-loose">
-                    React Native Langchain <br/> Chat-bot
+                    React Native Langchain <br /> Chat-bot
                   </p>
                 </div>
               </div>{" "}
