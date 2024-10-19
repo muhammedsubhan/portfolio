@@ -6,14 +6,14 @@ import github from "@/images/live-github.png";
 
 const ProjectCard = () => {
   return (
-    <div className="w-[500px] border border-[#ABB2BF] mt-20">
+    <div className="max-w-[500px] border border-[#ABB2BF] mt-20  md:min-w-full">
       <div className="overflow-hidden group">
         <Image
           src={portfolio}
           alt="portfolio_img"
           width={500}
           height={300}
-          className="transition-transform duration-500 ease-in-out group-hover:scale-110"
+          className="transition-transform duration-500 ease-in-out group-hover:scale-110 md:w-full"
         />
       </div>
       <div className="p-2 border border-[#ABB2BF]">

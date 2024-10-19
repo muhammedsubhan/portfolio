@@ -21,11 +21,11 @@ const Navbar = () => {
   return (
     <>
       <div className="flex sticky top-0 z-50 bg-[#282c33]">
-        <div className="absolute">
+        <div className="absolute lg:hidden block">
           <div className="px-12 lg:px-0 lg:pl-8 ">
             <p className="border-r-[2px] border-[#ABB2BF] h-[300px] rounded-full"></p>
           </div>
-          <div className="px-[37px] lg:px-0 lg:pl-7 mt-5">
+          <div className="px-[37px] lg:px-0 lg:pl-7 mt-5 ">
             <ul className="flex flex-col gap-5">
               <li>
                 <Link href="https://github.com/muhammedsubhan" target="_blank">
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between px-56  h-24 w-full xl:px-12">
+        <div className="flex items-center justify-between px-56  h-24 w-full xl:px-16 lg:px-6">
           <Link href="/">
             <div className="flex items-center gap-3">
               <Image
