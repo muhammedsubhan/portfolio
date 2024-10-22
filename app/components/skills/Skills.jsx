@@ -14,7 +14,7 @@ const Skills = () => {
             <p className="border border-[#C778DD] h-[1px] w-[500px] rounded-full"></p>
           </div>
         </div>
-        <div className="mt-20 flex justify-between">
+        <div className="mt-20 flex justify-between  2xl:flex-col-reverse" >
           <div>
             <Image
               src={skills_image}
@@ -25,7 +25,7 @@ const Skills = () => {
             />
           </div>
           <div className="flex  gap-5 ">
-            <div className="border border-[#ABB2BF] w-[250px] h-[140px]">
+            <div className="border border-[#ABB2BF] min-w-[250px] h-[140px]">
               <h1 className="border border-[#ABB2BF] py-2 px-2 text-white font-medium  text-lg tracking-widest">
                 Languages
               </h1>
@@ -60,7 +60,7 @@ const Skills = () => {
             <div className="flex flex-col gap-5">
               <div className="border border-[#ABB2BF] w-[250px]  h-[160px]">
                 <h1 className="border border-[#ABB2BF] py-2 px-2 text-white font-medium  text-lg tracking-widest">
-                  Mobile dev or Chatbot
+                  Mobile or Generative Ai
                 </h1>
                 <div>
                   <p className="text-[#ABB2BF] text-lg font-medium tracking-widest p-2 leading-loose">

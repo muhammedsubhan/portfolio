@@ -6,17 +6,17 @@ import arrow_r from "@/images/arrow_r.png";
 const AboutMe = () => {
   return (
     <>
-      <div className=" mt-8 py-5 px-56">
-        <div className="flex items-center mt-28">
+      <div className=" mt-8 py-5 px-56 xl:px-20 lg:px-6">
+        <div className="flex items-center mt-28 ">
           <h1 className="text-white text-3xl font-medium flex gap-1  tracking-widest">
             <span className="text-[#C778DD]">#</span>about-me
           </h1>
-          <div className="px-5">
-            <p className="border border-[#C778DD] h-[1px] w-[500px] rounded-full"></p>
+          <div className="px-5  lg:w-full">
+            <p className="border border-[#C778DD] h-[1px] w-[500px] rounded-full lg:w-full"></p>
           </div>
         </div>
-        <div className="flex justify-between ">
-          <div className=" w-[780px] min-h-[500px] mt-20 flex flex-col gap-10">
+        <div className="flex justify-between 2xl:flex-col">
+          <div className=" w-[780px] min-h-[500px] mt-20 flex flex-col gap-10 lg:w-full">
             <p className="text-xl text-[#ABB2BF]  tracking-widest leading-loose">
               Hello, I'm Subhan!
               <br />
@@ -40,7 +40,7 @@ const AboutMe = () => {
               </button>
             </div>
           </div>
-          <div>
+          <div className="2xl:flex 2xl:items-center 2xl:justify-center lg:mt-8">
             <Image
               src={about_image}
               alt="about-image"

@@ -9,8 +9,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className=" px-56 border-t-2 border-[#ABB2BF] py-10 mt-10">
-        <div className="flex justify-between">
+      <div className=" px-56 border-t-2 border-[#ABB2BF] py-2 mt-10 xl:px-20 lg:px-6">
+        {/* <div className="flex gap-5 justify-between sm:flex-col">
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-3">
               <Image
@@ -79,8 +79,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className="mt-8 flex items-center justify-center">
+        </div> */}
+        <div className="mt-0 flex items-center justify-center sm:text-center">
           <p className="text-[#ABB2BF]">© Copyright 2024. Made by Subhan</p>
         </div>
       </div>
