@@ -6,7 +6,7 @@ import Image from "next/image";
 const ContactMe = () => {
   return (
     <>
-      <div className="mt-8 py-5 px-56 xl:px-20 lg:px-6">
+      <div className="mt-8 py-5 px-56 xl:px-20 lg:px-6" id="contacts">
         <div className="flex items-center mt-28">
           <h1 className="text-white text-3xl font-medium flex gap-1 tracking-widest">
             <span className="text-[#C778DD]">#</span>contacts

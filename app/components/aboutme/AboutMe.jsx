@@ -6,7 +6,7 @@ import arrow_r from "@/images/arrow_r.png";
 const AboutMe = () => {
   return (
     <>
-      <div className=" mt-8 py-5 px-56 xl:px-20 lg:px-6">
+      <div className=" mt-8 py-5 px-56 xl:px-20 lg:px-6" id="about-me">
         <div className="flex items-center mt-28 ">
           <h1 className="text-white text-3xl font-medium flex gap-1  tracking-widest">
             <span className="text-[#C778DD]">#</span>about-me

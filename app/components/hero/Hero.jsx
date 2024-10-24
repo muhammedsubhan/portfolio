@@ -4,7 +4,10 @@ import heroImg from "@/images/hero-image.png";
 const Hero = () => {
   return (
     <>
-      <div className=" flex px-56  pt-[67px]  items-center justify-between xl:px-20 lg:px-6 md:flex-col">
+      <div
+        id="home"
+        className=" flex px-56  pt-[67px]  items-center justify-between xl:px-20 lg:px-6 md:flex-col"
+      >
         <div className="flex flex-col gap-8  mt-1">
           <h1 className="text-white font-medium text-[45px] leading-tight tracking-widest	md:text-[40px] sm:text-[30px]">
             Subhan is a <span className="text-[#C778DD]">mern stack dev </span>

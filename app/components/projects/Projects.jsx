@@ -6,7 +6,7 @@ import ProjectCard from "./projectCard/ProjectCard";
 const Projects = () => {
   return (
     <>
-      <div className=" mt-8 py-5 px-56 xl:px-20 lg:px-6 ">
+      <div className=" mt-8 py-5 px-56 xl:px-20 lg:px-6 " id="works">
         <div className="flex items-center mt-28  ">
           <h1 className="text-white text-3xl font-medium flex gap-1  tracking-widest ">
             <span className="text-[#C778DD]">#</span>projects
@@ -17,7 +17,13 @@ const Projects = () => {
           <div className="flex justify-end  w-full sm:w-0 ">
             <button className="text-lg text-white tracking-widest flex items-center gap-2 md:text-sm  sm:hidden ">
               View all{" "}
-              <Image src={arrow_r} alt="arrow-icon" height={30} width={35} className="w-[20px]"/>
+              <Image
+                src={arrow_r}
+                alt="arrow-icon"
+                height={30}
+                width={35}
+                className="w-[20px]"
+              />
             </button>
           </div>
         </div>
