@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@/images/Logo.png";
 import arrow_down from "@/images/arrow-down.png";
 import Image from "next/image";
@@ -17,6 +17,22 @@ const Navbar = () => {
   const handleSetActive = (link) => {
     setActiveLink(link);
   };
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
