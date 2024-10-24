@@ -20,6 +20,89 @@ const Navbar = () => {
 
   return (
     <>
+      <div
+        className={`${
+          isOpen ? "min-h-[400px] py-10 opacity-100 " : "h-0 opacity-0"
+        } overflow-hidden bg-[#282c33] transition-all duration-500 ease-in-out`}
+      >
+        <div className="p-5">
+          <div className="">
+            <ul className="flex flex-col  gap-8 lg:gap-6">
+              {["home", "works", "about-me", "contacts"].map((link) => (
+                <li
+                  key={link}
+                  className={`text-xl font-medium flex gap-1 cursor-pointer  tracking-widest ${
+                    activeLink === link
+                      ? "text-white"
+                      : "text-[#ABB2BF] opacity-80"
+                  }`}
+                  onClick={() => handleSetActive(link)}
+                >
+                  <span className="text-[#C778DD]">#</span>
+                  {link}
+                </li>
+              ))}
+              <li>
+                <div className="flex items-center gap-1 ml-4 lg:ml-0">
+                  <p className="text-xl font-medium text-[#ABB2BF]">EN</p>
+                  <Image
+                    src={arrow_down}
+                    width={14}
+                    height={14}
+                    alt="arrow-icon"
+                  />
+                </div>
+              </li>
+            </ul>
+            <div className=" py-5  flex items-center justify-center">
+              <ul className="flex gap-8 items-center">
+                <li>
+                  <Link
+                    href="https://github.com/muhammedsubhan"
+                    target="_blank"
+                  >
+                    <Image
+                      src={github}
+                      alt="github-icon"
+                      height={25}
+                      width={35}
+                      className="cursor-pointer"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.linkedin.com/in/muhammad-subhan-software-engineer-917b62206/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={linkedin}
+                      alt="linkedin-icon"
+                      height={25}
+                      width={35}
+                      className="cursor-pointer"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammedsubhan692@gmail.com"
+                    target="_blank"
+                  >
+                    <Image
+                      src={email}
+                      alt="email-icon"
+                      height={25}
+                      width={35}
+                      className="cursor-pointer"
+                    />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="flex sticky top-0 z-50 bg-[#282c33]">
         <div className="absolute lg:hidden block">
           <div className="px-12 lg:px-0 lg:pl-8 ">
