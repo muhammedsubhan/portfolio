@@ -6,7 +6,7 @@ import linkedin from "@/images/linkedin.png";
 import email from "@/images/email.png";
 import Link from "next/link";
 
-const Footer = () => {
+const Footers = () => {
   return (
     <>
       <div className=" px-56 border-t-2 border-[#ABB2BF] py-2 mt-10 xl:px-20 lg:px-6">
@@ -88,4 +88,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footers;
